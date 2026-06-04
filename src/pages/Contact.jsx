@@ -148,10 +148,10 @@ const Contact = () => {
 
           {/* Social Links */}
           <div className="mt-8 flex justify-center space-x-6">
-          <button className="text-gray-600 hover:text-purple-600 transition text-2xl">📘</button>
-          <button className="text-gray-600 hover:text-purple-600 transition text-2xl">🐦</button>
-          <button className="text-gray-600 hover:text-purple-600 transition text-2xl">📷</button>
-          <button className="text-gray-600 hover:text-purple-600 transition text-2xl">🔗</button>  
+          <button type="button">📘</button>
+              <button type="button">🐦</button>
+              <button type="button">📷</button>
+              <button type="button">🔗</button> 
           </div>
         </div>
       </div>
