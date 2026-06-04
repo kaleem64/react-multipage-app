@@ -9,14 +9,15 @@ const ProductDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    fetchProductDetails();
-  }, [id]);
 
+
+ useEffect(() => {
   const fetchProductDetails = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
+      const response = await axios.get(
+        `https://fakestoreapi.com/products/${id}`
+      );
       setProduct(response.data);
       setError(null);
     } catch (err) {
@@ -26,6 +27,9 @@ const ProductDetails = () => {
       setLoading(false);
     }
   };
+
+  fetchProductDetails();
+}, [id]);
 
   if (loading) {
     return (
