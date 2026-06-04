@@ -147,12 +147,12 @@ const Contact = () => {
           </div>
 
           {/* Social Links */}
-          <div className="mt-8 flex justify-center space-x-6">
-          <button type="button">📘</button>
-              <button type="button">🐦</button>
-              <button type="button">📷</button>
-              <button type="button">🔗</button> 
-          </div>
+        <div className="mt-8 flex justify-center space-x-6">
+  <a href="https://facebook.com" target="_blank" rel="noreferrer">📘</a>
+  <a href="https://twitter.com" target="_blank" rel="noreferrer">🐦</a>
+  <a href="https://instagram.com" target="_blank" rel="noreferrer">📷</a>
+  <a href="https://linkedin.com" target="_blank" rel="noreferrer">🔗</a>
+</div>
         </div>
       </div>
     </div>
