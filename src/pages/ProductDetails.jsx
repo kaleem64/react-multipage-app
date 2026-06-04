@@ -2,33 +2,24 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const ProductDetails = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const [product, setProduct] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+const fetchProductDetails = async (id) => {
+  try {
+    setLoading(true);
+    const response = await axios.get(
+      `https://fakestoreapi.com/products/${id}`
+    );
+    setProduct(response.data);
+    setError(null);
+  } catch (err) {
+    setError('Product not found or failed to load.');
+    console.error('Error fetching product details:', err);
+  } finally {
+    setLoading(false);
+  }
+};
 
-
-
- useEffect(() => {
-  const fetchProductDetails = async () => {
-    try {
-      setLoading(true);
-      const response = await axios.get(
-        `https://fakestoreapi.com/products/${id}`
-      );
-      setProduct(response.data);
-      setError(null);
-    } catch (err) {
-      setError('Product not found or failed to load.');
-      console.error('Error fetching product details:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  fetchProductDetails();
+useEffect(() => {
+  fetchProductDetails(id);
 }, [id]);
 
   if (loading) {
