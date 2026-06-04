@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "position": "CEO & Founder",
+    "bio": "John has over 15 years of experience in web development and leads our team with passion and innovation.",
+    "image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "email": "john.doe@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "position": "CTO",
+    "bio": "Jane is a full-stack expert who ensures our technical architecture is cutting-edge and scalable.",
+    "image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "email": "jane.smith@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Mike Johnson",
+    "position": "Lead Developer",
+    "bio": "Mike specializes in React and modern JavaScript frameworks, delivering high-quality code.",
+    "image": "https://randomuser.me/api/portraits/men/3.jpg",
+    "email": "mike.johnson@example.com"
+  },
+  {
+    "id": 4,
+    "name": "Sarah Williams",
+    "position": "UI/UX Designer",
+    "bio": "Sarah creates beautiful and intuitive designs that provide exceptional user experiences.",
+    "image": "https://randomuser.me/api/portraits/women/4.jpg",
+    "email": "sarah.williams@example.com"
+  }
+]
