@@ -148,13 +148,10 @@ const Contact = () => {
 
           {/* Social Links */}
           <div className="mt-8 flex justify-center space-x-6">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-gray-600 hover:text-purple-600 transition text-2xl">📘</a>
-
-<a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-gray-600 hover:text-purple-600 transition text-2xl">🐦</a>
-
-<a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-gray-600 hover:text-purple-600 transition text-2xl">📷</a>
-
-<a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-gray-600 hover:text-purple-600 transition text-2xl">🔗</a>
+          <button className="text-gray-600 hover:text-purple-600 transition text-2xl">📘</button>
+          <button className="text-gray-600 hover:text-purple-600 transition text-2xl">🐦</button>
+          <button className="text-gray-600 hover:text-purple-600 transition text-2xl">📷</button>
+          <button className="text-gray-600 hover:text-purple-600 transition text-2xl">🔗</button>  
           </div>
         </div>
       </div>
